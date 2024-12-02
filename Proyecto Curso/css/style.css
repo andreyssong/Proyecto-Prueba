@@ -31,6 +31,7 @@ header {
 	background-color: var(--fondo);
 	top: 0;
 	left: 0;
+	border-color: #0a1dca;
 }
 
 header.left {
@@ -44,6 +45,7 @@ header .contenedor {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-left: 0;
 }
 
 header .logotipo {
@@ -156,6 +158,7 @@ header nav a.activo {
 	width: 15rem;
 	border-radius: 5%;
 	cursor: pointer;
+
 }
 
 .imagen-pd:hover {
