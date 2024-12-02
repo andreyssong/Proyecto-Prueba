@@ -1,0 +1,229 @@
+:root {
+	--azul: #0a1dca;
+	--fondo: #03020c;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+	z-index: 200;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.45rem 2rem 0.45rem 1.27rem;
+	border-bottom: 1px solid var(--fondo);
+	position: fixed;
+	background-color: var(--fondo);
+	top: 0;
+	left: 0;
+}
+
+header.left {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	gap: 1.4rem;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--azul);
+	font-size: 40px;
+	cursor: pointer;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+	font-size: 15px;
+}
+
+header nav a:hover {
+	color: #0a1dca;
+	font-size: 18px;
+	transition: 0.2s;
+}
+
+header nav a.activo {
+	color:#0a1dca;
+	font-size: 18px;
+}
+
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .70) 0%, rgba(0,0,0,.60) 100%), url(/imagenes/15187288249_89882b14b7_h.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	margin-left: 40px;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo-principal {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+	background: var(--fondo);
+	border: none;
+	border-radius: 1em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+
+.peliculas-destacadas {
+	font-size: 16px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+	justify-content: center;
+}
+
+.titulo {
+	font-size: 1.5em;
+    color: white;
+    width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.contenedor-destacadas  {
+	margin-top: 5px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	gap: 40px;
+}
+
+.imagen-pd {
+	width: 15rem;
+	border-radius: 5%;
+	cursor: pointer;
+}
+
+.imagen-pd:hover {
+	width: 17rem;
+	transition: 0.3s;
+	transition-delay: 0.5s;
+}
+
+.sidebar {
+	margin-top: 4rem;
+	width: 4rem;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding: 1.1rem 0;
+	border-right: 1px solid var(--azul);
+	overflow-y: auto;
+	background-color: var(--fondo);
+}
+
+
+.sidebar img{
+	width: 1.6rem;
+}
+
+.sidebar a {
+	display: flex;
+	align-items: center;
+	gap: 1.3rem;
+	padding: 0.9rem 0.7rem;
+	text-decoration: none;
+	margin: 0 0.5rem;
+	border-radius: 0.5rem;
+	white-space: nowrap;
+	overflow: hidden;
+	color: white;
+}
+
+.sidebar:hover {
+	background-color: #08051b;
+	width: 18.75rem;
+	transition: 0.5s;
+}
+
+.sidebar a.selected {
+	color: var(--azul);
+	background-color: var(--fondo);
+	font-weight: bold;
+}
+
+.sidebar input {
+	width: 200px;
+	border-radius: 15px;
+	height: 25px;
+	font-family: 'Open sans';
+	
+}
+
+.sidebar a.search {
+	padding: 1rem 0.7rem;
+	border-bottom: 1px solid var(--azul);
+	margin-bottom: 0.2rem;
+
+}
+
+.sidebar a:hover {
+	background-color: var(--fondo);
+	border-radius: 5px;
+}
