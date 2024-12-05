@@ -1,86 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="/imagenes/logokamflix.png">
     <title>KAMFLIX</title>
 </head>
 <body>
     <header>
-            <div class="sidebar" id="sidebar">
-            <nav>
-                <ul>
-                    <li id="opciones-menu">
-                        <a href="#" class="search">
-                            <img src="iconos/buscar.svg" alt="">
-                            <input type="text">
-                        </a>
-                    </li>
-                    <li id="opciones-menu">
-                        <a href="Inicio.html" class="selected">
-                            <img src="iconos/inicio.svg" alt="">
-                            <span>Inicio</span>
-                        </a>
-                    </li>
-                </li>
-                <li id="opciones-menu">
-                    <a href="Películas.html">
-                        <img src="iconos/peliculas-azul.svg" alt="" id="icon">
-                        <span>Películas</span>
-                    </a>
-                </li>
-                <li id="opciones-menu">
-                    <a href="Series.html">
-                        <img src="iconos/series.svg" alt="" id="icon">
-                        <span>Series</span>
-                    </a>
-                </li>
-                <li id="opciones-menu">
-                    <a href="#">
-                        <img src="iconos/documentales.svg" alt="" id="icon">
-                        <span>Documentales</span>
-                    </a>
-                </li>
-                <li id="opciones-menu">
-                    <a href="#">
-                        <img src="iconos/estrenos.svg" alt="" id="icon">
-                        <span>Estrenos</span>
-                    </a>
-                </li>
-                <li id="opciones-menu">
-                    <a href="#">
-                        <img src="iconos/plus-azul.svg" alt="" id="icon">
-                        <span>Mi Lista</span>
-                    </a>
-                </li>
-                <li id="opciones-menu">
-                    <a href="#">
-                        <img src="iconos/micuenta.svg" alt="" id="icon">
-                        <span>Mi Cuenta</span>
-                    </a>
-                </li>
-                </ul>
-            </nav>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <h1><a href="Inicio.html" class="logo">KAMFLIX</a></h1>
+                </div>
+                <div class="menu-container">
+                    <ul class="menu-list">
+                        <li class="menu-list-item active"><a href="Inicio.html" class="activo">Inicio</a></li>
+                        <li class="menu-list-item active"><a href="Peliculas.html">Películas</a></li>
+                        <li class="menu-list-item active"><a href="Series.html">Series</a></li>
+                        <li class="menu-list-item active"><a href="MiLista.html">Mi lista</a></li>
+                    </ul>
+                </div>
+                <div class="profile-container">
+                    <img class="profile-picture" src="/imagenes/Profile-PNG.png" alt="">
+                    <div class="profile-text-container">
+                        <span class="profile-text">Cuenta</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="contenedor">
-			<h2><a href="Inicio.html" class="logotipo">Kamflix</a></h2>
-			<nav class="texto-navbar">
-				<a href="Inicio.html" class="activo">Inicio</a>
-				<a href="Películas.html">Películas</a>
-				<a href="Series.html">Series</a>
-                <a href="#">Estrenos</a>
-			</nav>
-		</div>
 	</header>
     <main>
+        <div class="degradado-izq"></div>
 		<section class="pelicula-principal">
             
 			<div class="contenedor">
-                <video autoplay loop muted plays-inline class="fondo-video">
-                    <source src="/videos/video-interestellar.mp4" type="video/mp4">
-                </video>
-				<h3 class="titulo-principal">Interestellar</h3>
+                <h3 class="titulo-principal">Interestellar</h3>
 				<p class="descripcion">
 					Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.
 				</p>
